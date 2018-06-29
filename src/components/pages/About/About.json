@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "button": "However creating and building is my way of life.",
+    "page": "I am a <strong>Full-Stack Web Developer.</strong> I specialize in Front-End development, proficient in HTML, CSS and Javascript with experience using React, Node.js, MySQL, Mongo, and many other technologies and frameworks."
+  },
+  {
+    "id": 2,
+    "button": "So.. what else?",
+    "page": "I'm an avid agriculturist. I annually grow fruits and vegetables from cucumbers, tomatoes, strawberries, and peppers, to herbs like basil, cilantro, oregano, and sage. I love sprucing up my landscape with sunflowers, nasturtiums, lavender, zinnia, and many more varities of color. Around 90% of my annual flora I start from seeds! I've even built an irrigated raised garden from scratch that simply needs a twist of of the spigot valve to keep the plants hydrated in the Texas heat."
+  },
+  {
+    "id": 3,
+    "button": "What about your ears?",
+    "page": "I'm a huge Dallas sports fan, mostly for the Cowboys and the Stars. #CowboyNation #VictoryRising"
+  },
+  {
+    "id": 4,
+    "button": "Anything more normal?",
+    "page": "Well that's a weird way to word that question.. but if you're talking about music, I've played drums since I was 15 years old and enjoy the occasional YouTube tutorial on guitar or ukele for my favorite songs. I like all music that has a good beat and will keep anything on repeat that surprises and impresses me. Check out some of my recent favorite bands and their music!"
+  },
+  {
+    "id": 5,
+    "button": "",
+    "page": "How can I be a programmer without joining the geek side? I'm a HUGE Star Wars fan. You most likely will see me wearing some kind of Star Wars apparel or spending time watching theories or backstories on a video streaming service. Calling you out with your temptations, YouTube. <br/> I love the Elder Scrolls, Fallout, Gears of War, Red Dead, and Halo series, and, of course, you might catch me with the latest Madden or NHL games. Any game that lets me express creativity is also greatness in my book."
+  }
+]

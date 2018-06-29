@@ -1,0 +1,93 @@
+
+.home{
+  margin-top: 50px;
+}
+/* 
+.home>img {
+  width: 100%;
+  margin-bottom: 50px;
+} */
+
+#HenryImage {
+  background-image: url("https://i.imgur.com/r8qFvuE.gif");
+  height: 100vh;
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-repeat: no-repeat;
+  background-size: auto;
+  background-position: right; */
+  /* display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center; */
+  width: 100%;
+}
+
+
+#typed {
+  font-size: 25px;
+  bottom: 0;
+  position: relative;
+}
+
+@media only screen and (max-width: 2000px) {
+  #typed { 
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  #typed { 
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  #typed { 
+    font-size: 20px;
+  }
+}
+
+/* @media only screen and (max-width: 769px) {
+  #typed { 
+    font-size: 20px;
+  }
+} */
+
+/* @media only screen and (max-width: 400px) {
+  #typed { 
+    font-size: 17px;
+  }
+} */
+
+@media only screen and (max-width: 375px) {
+  #typed { 
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  #typed { 
+    font-size: 14px;
+  }
+}
+
+
+.home>p{
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+}
+
+/* .reactive-p {
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+
+  }
+ */

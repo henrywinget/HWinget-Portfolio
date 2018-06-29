@@ -1,0 +1,14 @@
+.card {
+  width: 18rem;
+  margin-bottom: 25px;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: center;
+  margin-top: 50px;
+  min-height: 70vh;
+  margin-bottom: 50px;
+}
