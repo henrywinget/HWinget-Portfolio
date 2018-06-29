@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import './Projects.css';
+import Zoom from 'react-reveal/Zoom';
 
 export class Project extends Component {
   render() {
     return (
       <div className = "row projects">
+      <Zoom>
         <div className="card">
          <a href="https://github.com/henrywinget/HarkUp">
           <img className="card-img-top" src="https://i.imgur.com/Ex4JugH.png" alt="HarkUp"/>
@@ -29,6 +31,7 @@ export class Project extends Component {
             <p className="card-text">Play the age of game of hang-man, with a Star Wars-y twist!</p>
           </div>
         </div>
+        </Zoom>
       </div>
     )
   }
