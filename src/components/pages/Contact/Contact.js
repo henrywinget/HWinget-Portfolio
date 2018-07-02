@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import './Contact.css';
+import Zoom from 'react-reveal/Zoom';
 
 export class Contact extends Component {
   render() {
     return (
         <div id="contact-form" className="col">
+        <Zoom>
             <h5 id="contact-henry">Contact Henry</h5>
             <br/>
             <p>Have a look at my resume and contact me any way you'd like or enter your information in the form below and I will reach out to you!</p>
@@ -43,6 +45,7 @@ export class Contact extends Component {
                 <input className="btn btn-primary float-right" type="submit" value="Submit"/>
                 <p>I will get back to you as soon as I can!</p>
             </form>
+            </Zoom>
         </div>
     )
   }

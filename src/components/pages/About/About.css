@@ -29,6 +29,12 @@
   }
 }
 
+@media only screen and (max-width: 415px) {
+  .about-me { 
+    font-size: 15px;
+  }
+}
+
 @media only screen and (max-width: 375px) {
   .about-me { 
     font-size: 13px;
