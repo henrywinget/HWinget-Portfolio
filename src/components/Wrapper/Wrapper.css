@@ -22,3 +22,8 @@ body:before {
   -o-background-size: cover;
   background-size: cover;
 }
+
+@-ms-viewport{
+  width: device-width;
+  height: device-height;
+}
