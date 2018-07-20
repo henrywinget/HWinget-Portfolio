@@ -1,0 +1,32 @@
+{
+  "name": "h-winget-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://henrywinget.github.io/HWinget-Portfolio/home",
+  "proxy": "http://localhost:3001/",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "gh-pages": "^1.2.0",
+    "gulp": "^3.9.1",
+    "jquery-nav-scroll": "^1.4.1",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-reveal": "^1.2.2",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "react-strap": "^0.0.1",
+    "react-waypoint": "^8.0.2",
+    "reactstrap": "^6.3.0",
+    "smooth-scroll": "^14.2.0",
+    "typed.js": "^2.0.8"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
+  }
+}

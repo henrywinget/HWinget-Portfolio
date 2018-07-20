@@ -1,0 +1,100 @@
+/* 
+.home{
+  margin-top: 50px;
+} */
+/* 
+.home>img {
+  width: 100%;
+  margin-bottom: 50px;
+} */
+#behind-henry {
+  background: url("https://i.imgur.com/9lIa97O.png");
+  width: 100%;
+  max-height: 100vh;
+  /* background-repeat: no-repeat; */
+
+}
+#HenryImage {
+  background-image: url("https://i.imgur.com/r8qFvuE.gif");
+  min-height: 98vh;
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-repeat: no-repeat;
+  background-size: auto;
+  background-position: right; */
+  /* display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center; */
+  width: 100%;
+}
+
+
+#typed.react-reveal {
+  font-size: 20px;
+  bottom: 0;
+  position: relative;
+  color: black;
+}
+
+@media only screen and (max-width: 2000px) {
+  #typed { 
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  #typed { 
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  #typed { 
+    font-size: 20px;
+  }
+}
+
+/* @media only screen and (max-width: 769px) {
+  #typed { 
+    font-size: 20px;
+  }
+} */
+
+@media only screen and (max-width: 415px) {
+  #typed { 
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #typed { 
+    font-size: 8px;
+  }
+}
+
+@media only screen and (max-width: 319px) {
+  #typed { 
+    font-size: 6px;
+  }
+}
+
+
+.home>p{
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+}
+
+/* .reactive-p {
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+
+  }
+ */

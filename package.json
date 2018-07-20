@@ -2,24 +2,23 @@
   "name": "h-winget-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://henrywinget.github.io/HWinget-Portfolio/home",
+  "main": "server.js",
   "dependencies": {
-    "gh-pages": "^1.2.0",
+    "body-parser": "^1.18.3",
+    "concurrently": "^3.6.0",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.3",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "react-reveal": "^1.2.2",
-    "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.4",
-    "react-waypoint": "^8.0.2",
-    "typed.js": "^2.0.8"
+    "react-scripts": "1.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build"
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "cd client && yarn start",
+    "dev": "concurrently \"yarn run server\" \"yarn run client\""
   }
 }
