@@ -15,11 +15,9 @@ export default () => (
     <NavTabs />
     
     <Route exact path="/" component= {Home} />
-    <Wrapper>
     <About/>
     <Projects/>
     <Contact/>
-    </Wrapper>
     <Sidebar/>
     {/* <Route path = "/about" component = {About} />
     <Route path = "/projects" component = {Projects} />

@@ -7,7 +7,7 @@
 }
 
 .sideBar {
-  background: #6495ed;
+  background: #333;
   bottom: 0;
 }
 
@@ -18,8 +18,12 @@
   justify-content: center;
   text-align: center;
   bottom: 0;
-  background: #6495ed;
+  background: #333;
   /* border-bottom: 3px solid white; */
+}
+
+#all-rights {
+  color: whitesmoke;
 }
 
 .keep-up {

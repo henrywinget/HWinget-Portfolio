@@ -1,7 +1,18 @@
 .about-me {
   font-size: 15px;
   /* min-height: 70vh; */
-   margin-top: 200px;
+  padding: 100px 0;
+  background: #333;
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+  min-height: 110vh;
+}
+
+#about-me {
+  padding-top: 100px;
+  padding-right: auto;
+  padding-left: auto;
 }
 
 #henry-head-div {
@@ -27,11 +38,15 @@
 
 #about-header {
   text-align: center;
+  display: inline block;
+  /* border-bottom: 2px white solid;
+  padding-bottom: 5px; */
 }
 
 #first-about {
   margin-top: 30px;
 }
+
 
 @media only screen and (max-width: 2000px) {
   .about-me { 
@@ -57,6 +72,9 @@
   }
   #henry-head {
     width: 95%;
+  }
+  #henry-gif {
+    width: 100%;
   }
 }
 

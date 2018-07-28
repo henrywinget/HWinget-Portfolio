@@ -8,76 +8,145 @@
   margin-bottom: 50px;
 } */
 #behind-henry {
-  background: url("https://i.imgur.com/9lIa97O.png");
-  width: 100%;
-  max-height: 100vh;
-  /* background-repeat: no-repeat; */
-
-}
-#HenryImage {
-  background-image: url("https://i.imgur.com/r8qFvuE.gif");
-  min-height: 98vh;
-  background-size: auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  /* background-repeat: no-repeat;
-  background-size: auto;
-  background-position: right; */
-  /* display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  text-align: center; */
-  width: 100%;
+  /* background: url("https://i.imgur.com/XZoWyc7.png"); */
+  background: url("https://cdn.pixabay.com/photo/2016/03/23/21/38/pixels-1275701_1280.jpg");
+  /* width: 100%; */
+  background-repeat: repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  min-height: 110vh;
+  background-size: cover;
+  background-position: center center;
 }
 
+
+.huge.header {
+  font-size: 2rem;
+}
 
 #typed.react-reveal {
   font-size: 20px;
   bottom: 0;
   position: relative;
   color: black;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+  text-align: center;
+}
+
+#github-home, #linkedin-home, #stack-home {
+  z-index: 10;
+  height: 50px;
+  margin: 0px 20px;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  border-radius: 30px;
+}
+
+#henrys-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+#henry-winget {
+  text-align: center;
+  display: block;
+  color: white;
+  padding-top: 30vh;
+  font-size: 75px;
+  font-family: 'Press Start 2P';
+}
+
+#typed {
+  text-align: center;
+  position: relative;
+  display: block;
+  color: rgb(219, 219, 219);
+  padding-top: 3vh;
+  font-size: 20px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+#arrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+#arrow-down {
+  width: 50px;
+  /* padding-top: 15vh; */
+  -webkit-animation-name: hover; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+  /* -webkit-animation-delay: 2s; Safari 4.0 - 8.0 */
+  animation-name: hover;
+  animation-duration: 1s;
+  /* animation-delay: 2s; */
+  animation-iteration-count: infinite;
+  bottom: 0;
+}
+
+@-webkit-keyframes hover {
+  0%   {padding-top: 10vh; opacity: 1;}
+  50%   {padding-top: 15vh; opacity: .75;}
+  100% {padding-top: 10vh; opacity: 1;}
 }
 
 @media only screen and (max-width: 2000px) {
-  #typed { 
+  /* #typed { 
     font-size: 25px;
-  }
+  } */
 }
 
 @media only screen and (max-width: 1300px) {
-  #typed { 
+  /* #typed { 
     font-size: 25px;
-  }
+  } */
 }
 
 @media only screen and (max-width: 980px) {
-  #typed { 
-    font-size: 20px;
+  #HenryImage { 
+    background-position: center center;
   }
 }
 
 /* @media only screen and (max-width: 769px) {
-  #typed { 
-    font-size: 20px;
+  #HenryImage { 
+    background-position: center center;
   }
 } */
 
 @media only screen and (max-width: 415px) {
-  #typed { 
-    font-size: 12px;
+  .huge.header { 
+    font-size: 1em;
+  }
+
+  #typed {
+    font-size: 28px;
+  }
+
+  #henry-winget {
+    font-size: 55px;
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 376px) {
   #typed { 
-    font-size: 8px;
+    font-size: 20px;
+  }
+
+  #henry-winget {
+    font-size: 50px;
   }
 }
 
 @media only screen and (max-width: 319px) {
   #typed { 
-    font-size: 6px;
+    font-size: 18px;
   }
 }
 

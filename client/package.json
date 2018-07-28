@@ -3,11 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://henrywinget.github.io/HWinget-Portfolio/home",
-  "proxy": "http://localhost:3001/",
   "dependencies": {
     "axios": "^0.18.0",
     "gh-pages": "^1.2.0",
-    "gulp": "^3.9.1",
     "jquery-nav-scroll": "^1.4.1",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
@@ -18,6 +16,9 @@
     "react-strap": "^0.0.1",
     "react-waypoint": "^8.0.2",
     "reactstrap": "^6.3.0",
+    "semantic-ui-css": "^2.3.3",
+    "semantic-ui-react": "^0.82.1",
+    "semantic-ui": "^2.3.3",
     "smooth-scroll": "^14.2.0",
     "typed.js": "^2.0.8"
   },
@@ -28,5 +29,8 @@
     "eject": "react-scripts eject",
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
   }
 }

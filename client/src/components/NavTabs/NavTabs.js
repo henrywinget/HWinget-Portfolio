@@ -25,24 +25,13 @@ export class NavTabs extends Component {
 
     this.toggle = this.toggle.bind(this);
     this.state = {
-      isOpen: false
+      isOpen: false,
+      isTop: true
     };
+    this.onScroll = this.onScroll.bind(this);
   }
 
-  componentDidMount() {
-    const navType = () => {
-      const options = {
-        stringsElement: '#typed-nav',
-        typeSpeed: 70,
-        backSpeed: 50,
-        showCursor: false,
-        cursorChar: '|'
-      };
-      const typed = new Typed('#nav-typeout', options);
-    }
-    navType();
-  }
-
+  //Toggles 
   toggle() {
     this.setState({
       isOpen: !this.state.isOpen
@@ -55,32 +44,40 @@ export class NavTabs extends Component {
     });
   }
 
+  componentDidMount() {
+    document.addEventListener('scroll', () => {
+      const isTop = window.scrollY < 500;
+      if (isTop !== this.state.isTop) {
+        this.onScroll(isTop);
+      }
+    });
+  }
+
+  onScroll(isTop) {
+    this.setState({ isTop });
+  }
+
+
 
   render() {
     return (
-      // <div className = "container">
-        <Navbar light expand="md" id="navbar">
-        <div className = "container">
-          
-          <div id = "typed-nav">
-          <p>Henry Winget</p>
-          </div>
-          <NavbarBrand href="/"><span id="nav-typeout"></span></NavbarBrand>
+
+        <Navbar light expand="md" id="navbar" className={this.state.isTop ? 'up' : 'down'}>
+          <NavbarBrand href="/" className={this.state.isTop ? 'up' : 'down'}><strong>HENRY WINGET</strong></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto navigation" navbar>
+            <Nav className={this.state.isTop ? 'up ml-auto navigation' : 'down ml-auto navigation'} navbar>
               <NavItem>
-                <NavLink href="#about-scroll">About</NavLink>
+                <NavLink href="#about-me">ABOUT</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#project-header">Projects</NavLink>
+                <NavLink href="#project-header">PROJECTS</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#contact-form">Contact</NavLink>
+                <NavLink href="#contact-form">CONTACT</NavLink>
               </NavItem>
             </Nav>
           </Collapse>
-          </div>
         </Navbar>
     );
   }

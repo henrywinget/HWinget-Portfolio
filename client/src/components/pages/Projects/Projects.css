@@ -3,16 +3,23 @@
   margin-bottom: 25px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   color: black;
+  font-size: 15px;
+}
+
+.card-title {
+  font-family: 'Press Start 2P', sans-serif;
 }
 
 #all-projects {
-  margin-top: 200px;
+  min-height: 110vh;
+  padding: 100px 0;
+  background: #f8f8f8;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .projects {
   display: flex;
   justify-content: space-around;
-  align-items: stretch;
   align-content: center;
   margin-top: 50px;
   /* min-height: 70vh; */
