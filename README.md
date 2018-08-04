@@ -1,4 +1,4 @@
 # HWinget-Portfolio
 
-## Deployed at (henrywinget.com)
+## Deployed at www.henrywinget.com
 
