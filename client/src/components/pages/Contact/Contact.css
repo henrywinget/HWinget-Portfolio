@@ -1,6 +1,15 @@
 #contact-form {
-  margin-top: 200px;
-  margin-bottom: 50px;
+  padding: 100px 0;
+  min-height: 110vh;
+  padding: 100px 0;
+  background: #06122a;
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.row {
+  margin-right: 0;
+  margin-left: 0;
 }
 
 #contact-form>form {
@@ -13,7 +22,12 @@
 
 #contact-henry {
   text-align: center;
+  font-family: 'Press Start 2P', sans-serif;
 }
+/* .row {
+  margin-right: 15px;
+  margin-left: 15px;
+} */
 
 /* @media only screen and (max-width: 2000px) {
   #contact-form { 
@@ -27,26 +41,46 @@
   }
 } */
 
-@media only screen and (max-width: 980px) {
-  #contact-form { 
-    font-size: 20px;
+.contacts a {
+  color: white;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 10vh;
+}
+
+@media only screen and (max-width: 2000px) {
+  .contacts a p {
+    font-size: 30px;
   }
 }
 
-@media only screen and (max-width: 415px) {
-  #contact-form { 
-    font-size: 13px;
+@media only screen and (max-width: 800px) {
+  .contacts a p {
+    font-size: 20px;
   }
   #contact-henry {
     text-align: center;
   }
-  #contact-form>form {
-    padding: 10px;
-  }
 }
 
-@media only screen and (max-width: 330px) {
-  #contact-form { 
+@media only screen and (max-width: 500px) {
+  .contacts a p {
+    font-size: 14px;
+  }
+  /* .contacts a p img {
+    width: 10%;
+  } */
+}
+
+@media only screen and (max-width: 350px) {
+  .contacts a p {
     font-size: 12px;
   }
+  /* .contacts a p img {
+    width: 10%;
+  } */
 }

@@ -11,16 +11,16 @@
 }
 
 #all-projects {
-  min-height: 110vh;
+  min-height: 100vh;
   padding: 100px 0;
-  background: #f8f8f8;
+  background: #182c69;
   font-family: 'Roboto Mono', monospace;
 }
 
 .projects {
-  display: flex;
+  /* display: flex;
   justify-content: space-around;
-  align-content: center;
+  align-content: center; */
   margin-top: 50px;
   /* min-height: 70vh; */
   /* margin-bottom: 50px; */
@@ -28,4 +28,11 @@
 
 #project-header {
   text-align: center;
+  font-family: 'Press Start 2P', sans-serif;
+  color: white;
+  padding-bottom: 10vh;
+}
+
+#henry-gif {
+  width: 100%;
 }

@@ -2,7 +2,7 @@
   "name": "h-winget-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://henrywinget.github.io/HWinget-Portfolio/home",
+  "homepage": "https://henrywinget.com/",
   "dependencies": {
     "axios": "^0.18.0",
     "gh-pages": "^1.2.0",

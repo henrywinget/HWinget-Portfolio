@@ -4,10 +4,8 @@ import Zoom from 'react-reveal/Zoom';
 import Typed from 'typed.js';
 import Fade from 'react-reveal/Fade';
 import Spin from 'react-reveal/Spin';
-import Jump from 'react-reveal/Jump';
 import gitHubLogo from'./images/github2.png';
 import linkedInLogo from'./images/linkedin.png';
-import stackOverflowLogo from'./images/stackoverflow.png';
 import mailLogo from './images/mail.png';
 import arrow from './images/arrow.png';
 
@@ -36,6 +34,7 @@ class Home extends Component {
 
   render() {
     return (
+      <div className ="behind-color">
       <div className="home" id="behind-henry">
         <Fade top>
         <h1 id="henry-winget">HENRY WINGET</h1>
@@ -46,8 +45,8 @@ class Home extends Component {
         </div>
               <div id ="henrys-links">
         <Spin>
-        <a href ="https://www.linkedin.com/in/henry-winget-343240122/" target="_blank" rel="noopener noreferrer"><img id ="linkedin-home" src= {linkedInLogo} alt="LinkedIn Icon"/></a>
-        <a href ="https://stackoverflow.com/users/8904181/henry-winget" target="_blank" rel="noopener noreferrer"><img id ="stack-home" src= {mailLogo} alt="StackOverflow Icon"/></a>
+        <a href ="https://www.linkedin.com/in/henrywinget" target="_blank" rel="noopener noreferrer"><img id ="linkedin-home" src= {linkedInLogo} alt="LinkedIn Icon"/></a>
+        <a href ="mailto:henrywinget@gmail.com" target="_blank" rel="noopener noreferrer"><img id ="stack-home" src= {mailLogo} alt="Mail Henry"/></a>
         <a href ="https://github.com/henrywinget" target="_blank" rel="noopener noreferrer"><img id ="github-home" src= {gitHubLogo} alt="GitHub Icon"/></a>
         </Spin>
         </div>
@@ -61,6 +60,8 @@ class Home extends Component {
         </Zoom>
         </div>
       </div>
+      </div>
+      
     )
   }
 }
