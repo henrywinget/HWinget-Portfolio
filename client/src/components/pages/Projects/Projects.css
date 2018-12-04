@@ -8,19 +8,27 @@
 
 .card-title {
   font-family: 'Press Start 2P', sans-serif;
+  text-align: center;
+}
+
+.card-text {
+  color: white;
+  padding: 20px;
+  margin-left: -15px;
 }
 
 #all-projects {
   min-height: 100vh;
   padding: 100px 0;
+  /* background: url("https://i.giphy.com/media/2J0g27YvOsqUE/giphy.webp") 100%; */
   background: #182c69;
   font-family: 'Roboto Mono', monospace;
 }
 
 .projects {
-  /* display: flex;
+  display: flex;
   justify-content: space-around;
-  align-content: center; */
+  align-content: center;
   margin-top: 50px;
   /* min-height: 70vh; */
   /* margin-bottom: 50px; */

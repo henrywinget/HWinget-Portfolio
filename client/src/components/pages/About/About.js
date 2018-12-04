@@ -22,17 +22,17 @@ class About extends Component {
         <Wrapper>
           <div className="row" id="about-me">
             <div id="henry-real" className="col-xs-12 col-lg-5">
-            <Fade clear>
-              <img src={overLooking} alt="Henry" id="henry-real-img" />
+              <Fade clear>
+                <img src={overLooking} alt="Henry" id="henry-real-img" />
               </Fade>
             </div>
             <div id="first-about" className="col-xs-12 col-lg-7">
-              <p>I'm a <strong>full-stack web developer</strong> and avid coding enthusiast living in Dallas, TX.
+              <p>I'm a <strong>full-stack web developer</strong> and coding enthusiast living in Dallas, TX.
                 <br /><br />
-                I enjoy spending my time learning something new and creating something fun. You might also find me spending time in my garden, running through another classic RPG playthrough, or traveling the world.
+                I'm probably spending my time learning something new and creating something fun. You might also find me spending time in my garden, running through another classic RPG playthrough, or traveling the world.
                  <br /><br />
-                I also do much more than that. Contact me to find out more. 
-                <br/> <br/>Let's build something!</p>
+                I also do much more than that. Contact me to find out more.
+                <br /> <br />Let's build something!</p>
               {/* <p className="about-me-buttons" onClick={this.renderAg}>Hi Henry!<br/> What else do you do?</p> */}
             </div>
 

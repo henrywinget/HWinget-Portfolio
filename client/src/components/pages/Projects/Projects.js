@@ -12,43 +12,45 @@ export class Project extends Component {
         <Wrapper>
           <h2 id="project-header">PROJECTS</h2>
           <div className="row projects">
-            <div className="project-cards col-sm-6">
-              <Slide left>
-                <div className="col-sm-6 col-lg-3">
-                  <a href="https://hark-up.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-                    <Card inverse>
-                      <CardImg width="100%" src="https://i.imgur.com/4zCYXAh.png" target="_blank" rel="noopener noreferrer" alt="HarkUp" />
-                      <CardImgOverlay>
-                        <CardTitle>HarkUp</CardTitle>
-                        <CardText>Text to speech application. Paste your article's URL in the space and let HarkUp read it for you!</CardText>
-                        {/* <CardText>
-              <small className="text-muted">Last updated 3 mins ago</small>
-            </CardText> */}
-                      </CardImgOverlay>
-                    </Card>
-                  </a>
-                </div>
-              </Slide>
-              <Slide left>
-                <div className="col-sm-6 col-lg-3">
-                  <a href="https://github.com/henrywinget/Star-Wars-Hangman" target="_blank" rel="noopener noreferrer">
-                    <Card inverse>
-                      <CardImg width="100%" src="https://i.imgur.com/kHxuipe.png" alt="Star Wars Hang-Man" />
-                      <CardImgOverlay>
-                        <CardTitle>Star Wars Hangman</CardTitle>
-                        <CardText>Play the age old game of hangman, with a Star Wars twist on your desktop!</CardText>
-                        {/* <CardText>
-              <small className="text-muted">Last updated 3 mins ago</small>
-            </CardText> */}
-                      </CardImgOverlay>
-                    </Card>
-                  </a>
-                </div>
-              </Slide>
+            <Slide left>
+              <div className="col-lg-4">
+                <a href="https://hark-up.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                  <Card inverse>
+                    <CardImg width="100%" src="https://i.imgur.com/4zCYXAh.png" target="_blank" rel="noopener noreferrer" alt="HarkUp" />
+                    <CardImgOverlay>
+                      <CardTitle>HarkUp</CardTitle>
+                    </CardImgOverlay>
+                  </Card>
+                </a>
+                <CardText>Text to speech application. Paste your article's URL in the space and let HarkUp read it for you! *Handlebars/ MySQL /Cheerio</CardText>
               </div>
-            <div id="HenryImage" className="col-xs-12 col-lg-6">
-              <img src={henryDev} alt="Henry Typing" id="henry-gif" />
-            </div>
+            </Slide>
+            <Slide up>
+              <div className="col-lg-4">
+                <a href="http://watson.cleari.ai:8080/" target="_blank" rel="noopener noreferrer">
+                  <Card inverse>
+                    <CardImg width="100%" src="https://i.imgur.com/eukDyTt.png" alt="Clear Intelligence Restaurant" />
+                    <CardImgOverlay>
+                      <CardTitle>Clear Intelligence Food-to-Table Experience</CardTitle>
+                    </CardImgOverlay>
+                  </Card>
+                </a>
+                <CardText>Powered by IBM Watson, a food-to-fork experience designed to promote customer knowledge of the food they are served, as well as provide the restaurant with valuable analytics to promote business growth. *React.js/ Express/ Node/ MongoDB</CardText>
+              </div>
+            </Slide>
+            <Slide right>
+              <div className="col-lg-4">
+                <a href="https://github.com/henrywinget/Star-Wars-Hangman" target="_blank" rel="noopener noreferrer">
+                  <Card inverse>
+                    <CardImg width="100%" src="https://i.imgur.com/kHxuipe.png" alt="Star Wars Hang-Man" />
+                    <CardImgOverlay>
+                      <CardTitle>Star Wars Hangman</CardTitle>
+                    </CardImgOverlay>
+                  </Card>
+                </a>
+                <CardText>Play the age old game of hangman, with a Star Wars twist on your desktop! *HTML /Javascript</CardText>
+              </div>
+            </Slide>
           </div>
         </Wrapper>
       </div>

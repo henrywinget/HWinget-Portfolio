@@ -1,0 +1,31 @@
+.Skills-section {
+    min-height: 100vh;
+    font-family: 'Press Start 2P', sans-serif;
+    padding: 100px 0;
+    background: #06122a;
+    color: white;
+}
+
+.Skills-header-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.Skills-icons-board {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+@media only screen and (max-width: 450px) {
+    .Skills-icons-img{
+        width: 100px;
+    }
+    .Skills-icons-board{
+        font-size: 14px;
+    }
+  }

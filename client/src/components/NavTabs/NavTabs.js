@@ -52,26 +52,29 @@ export class NavTabs extends Component {
 
 
   render() {
-;
+    ;
     return (
 
-        <Navbar light expand="md" id="navbar" className={this.state.isTop ? 'up' : 'down'}>
-          <NavbarBrand id ="title-brand" href="/" className={this.state.isTop ? 'up' : 'down'}><strong>HENRY WINGET</strong></NavbarBrand>
-          <NavbarToggler onClick={this.toggle} />
-          <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className={this.state.isTop ? 'up ml-auto navigation' : 'down ml-auto navigation'} navbar>
-              <NavItem onClick={this.toggle}>
-                <NavLink href="#about-header">ABOUT</NavLink>
-              </NavItem>
-              <NavItem onClick={this.toggle}>
-                <NavLink href="#project-header">PROJECTS</NavLink>
-              </NavItem>
-              <NavItem onClick={this.toggle}>
-                <NavLink href="#contact-henry">CONTACT</NavLink>
-              </NavItem>
-            </Nav>
-          </Collapse>
-        </Navbar>
+      <Navbar light expand="md" id="navbar" className={this.state.isTop ? 'up' : 'down'}>
+        <NavbarBrand id="title-brand" href="/" className={this.state.isTop ? 'up' : 'down'}><strong>HENRY WINGET</strong></NavbarBrand>
+        <NavbarToggler onClick={this.toggle} />
+        <Collapse isOpen={this.state.isOpen} navbar>
+          <Nav className={this.state.isTop ? 'up ml-auto navigation' : 'down ml-auto navigation'} navbar>
+            <NavItem onClick={this.toggle}>
+              <NavLink href="#about-header">ABOUT</NavLink>
+            </NavItem>
+            <NavItem onClick={this.toggle}>
+              <NavLink href="#project-header">PROJECTS</NavLink>
+            </NavItem>
+            <NavItem onClick={this.toggle}>
+              <NavLink href="#skills-header">SKILLS</NavLink>
+            </NavItem>
+            {/* <NavItem onClick={this.toggle}>
+              <NavLink href="#contact-henry">CONTACT</NavLink>
+            </NavItem> */}
+          </Nav>
+        </Collapse>
+      </Navbar>
     );
   }
 }

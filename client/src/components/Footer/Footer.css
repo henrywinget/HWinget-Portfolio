@@ -1,0 +1,47 @@
+.Footer_div {
+    background: rgb(0, 0, 0);
+    /* padding-top: 10px; */
+    padding-bottom: 25px;
+    border-top: 1px solid white;
+    
+}
+
+.typing-gif {
+    width: 250px;
+    height: 250px;
+}
+
+.typing-gif-col {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    padding-top: 50px;
+    width: 200px;
+    padding-right: 250px;
+}
+
+.Icon-col {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    padding-top: 125px;
+}
+
+.Icon_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 500px) {
+    .Icon-col { 
+        justify-content: center;
+        padding-top: 50px;
+    }
+    .typing-gif-col {
+        justify-content: center;
+        padding-right: 0;
+        padding-top: 0;
+    }
+  }
+  

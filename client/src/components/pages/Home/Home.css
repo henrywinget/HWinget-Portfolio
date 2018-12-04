@@ -15,14 +15,16 @@
 #behind-henry {
   /* background: url("https://i.imgur.com/XZoWyc7.png"); */
   background: url("https://i.imgur.com/qiUOU5i.jpg");
+  /* background: url("https://i.giphy.com/media/2J0g27YvOsqUE/giphy.webp") 100%; */
   /* width: 100%; */
-  background-repeat: repeat;
+  /* background-repeat: repeat; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  
   min-height: 110vh;
-  background-size: cover;
-  background-position: center center;
+  /* background-size: cover;
+  background-position: center center; */
 
 }
 
