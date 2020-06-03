@@ -3,7 +3,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Projects from './pages/Projects/Projects';
-import Contact from './pages/Contact/Contact';
+// import Contact from './pages/Contact/Contact';
 import Skills from './pages/Skills';
 import NavTabs from './NavTabs/NavTabs';
 import Footer from './Footer/Footer';
@@ -19,9 +19,6 @@ export default () => (
       <About />
       <Projects />
       <Skills />
-      {/* <Route path = "/about" component = {About} />
-    <Route path = "/projects" component = {Projects} />
-    <Route path = "/contact" component = {Contact} /> */}
       <Footer />
     </div>
   </BrowserRouter>

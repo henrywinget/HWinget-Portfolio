@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 // import { Link } from "react-router-dom";
 import './NavTabs.css';
-import Typed from 'typed.js';
+// import Typed from 'typed.js';
 import {
   Collapse,
   Navbar,
@@ -52,7 +52,6 @@ export class NavTabs extends Component {
 
 
   render() {
-    ;
     return (
 
       <Navbar light expand="md" id="navbar" className={this.state.isTop ? 'up' : 'down'}>

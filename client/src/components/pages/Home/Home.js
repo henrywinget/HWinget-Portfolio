@@ -24,8 +24,8 @@ class Home extends Component {
         startDelay: 1000,
       };
 
-      const typed = new Typed('#typed', options);
-    }
+      new Typed('#typed', options);
+    };
 
     setTimeout(firstTitle(), 2000);
 
@@ -42,7 +42,7 @@ class Home extends Component {
           <div id="typed-strings">
             <p>Hi! </p>
             <h1>I'm <strong>Henry Winget.</strong></h1>
-            <p>Full-Stack Web Developer.</p>
+            <p>Software / Web Developer.</p>
           </div>
           <div id="henrys-links">
             <Spin>

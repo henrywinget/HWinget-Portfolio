@@ -27,28 +27,25 @@ class About extends Component {
               </Fade>
             </div>
             <div id="first-about" className="col-xs-12 col-lg-7">
-              <p>I'm a <strong>full-stack web developer</strong> and coding enthusiast living in Dallas, TX.
-                <br /><br />
-                I'm probably spending my time learning something new and creating something fun. You might also find me spending time in my garden, running through another classic RPG playthrough, or traveling the world.
+                <div style={{ textAlign: 'center'}}>
+                * Software Development Engineer
+                <br />
+                ~ Visual Storage Intelligence
                  <br /><br />
-                I also do much more than that. Contact me to find out more.
-                <br /> <br />Let's build something!</p>
-              {/* <p className="about-me-buttons" onClick={this.renderAg}>Hi Henry!<br/> What else do you do?</p> */}
+                 * Teaching Assistant
+                <br/>
+                ~ 2U Education / SMU
+                <br/> <br/> <br/>
+                </div>
+              <p>Coding and teaching others to code in Dallas, TX.
+                <br/><br/>
+                Got something fun to build? Contact me to learn how we can build it together!
+                <br/><br/>
+                #BreakIt #FixIt #PushIt
+              </p>
             </div>
-
-            {/* <div id="HenryImage" className="col-xs-12 col-lg-6">
-              <img src={henryDev} alt="Henry Typing" id="henry-gif" />
-            </div> */}
           </div>
         </Wrapper>
-
-
-        {/* <div className = "about-components" id="ag">
-        </div>
-          <div className = "about-components" id="ears">
-          </div>
-          <div className = "about-components" id="geek">
-        </div> */}
       </div>
     )
   }

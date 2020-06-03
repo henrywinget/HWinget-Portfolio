@@ -2,7 +2,7 @@
     min-height: 100vh;
     font-family: 'Press Start 2P', sans-serif;
     padding: 100px 0;
-    background: #06122a;
+    background: linear-gradient(#06133c, #07154b 50%, #07154b 25%, #06122a);
     color: white;
 }
 
@@ -21,9 +21,16 @@
     padding: 15px;
 }
 
+.Skills-icons-img {
+    border-radius: 5px;
+    width: 128px;
+    height: 128px;
+}
+
 @media only screen and (max-width: 450px) {
     .Skills-icons-img{
         width: 100px;
+        height: 100px;
     }
     .Skills-icons-board{
         font-size: 14px;

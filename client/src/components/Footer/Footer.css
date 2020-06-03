@@ -1,9 +1,10 @@
 .Footer_div {
     background: rgb(0, 0, 0);
+    background: linear-gradient(rgb(0, 0, 0), rgb(5, 5, 5) 50%, rgb(5, 5, 5), rgb(0, 0, 0));
     /* padding-top: 10px; */
     padding-bottom: 25px;
+    margin: 0 !important;
     border-top: 1px solid white;
-    
 }
 
 .typing-gif {
@@ -23,14 +24,14 @@
 .Icon-col {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: right;
+    align-items: center;
     padding-top: 125px;
 }
 
-.Icon_row {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.Footer_text {
+    color: darkgray;
+    text-align: right;
+    padding-top: 20px;
 }
 
 @media only screen and (max-width: 500px) {
@@ -42,6 +43,11 @@
         justify-content: center;
         padding-right: 0;
         padding-top: 0;
+    }
+    .Footer_text {
+        color: darkgray;
+        text-align: center;
+        font-size: 12px;
     }
   }
   

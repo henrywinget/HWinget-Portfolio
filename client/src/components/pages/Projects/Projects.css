@@ -22,6 +22,7 @@
   padding: 100px 0;
   /* background: url("https://i.giphy.com/media/2J0g27YvOsqUE/giphy.webp") 100%; */
   background: #182c69;
+  background: linear-gradient(#182c69, #182c88 50%, #182c88 25%, #182c69);
   font-family: 'Roboto Mono', monospace;
 }
 
@@ -43,4 +44,8 @@
 
 #henry-gif {
   width: 100%;
+}
+
+.card {
+  width: 100% !important;
 }

@@ -1,14 +1,14 @@
 .about-me {
   font-size: 20px;
-  min-height: 70vh;
-  padding: 50px 0;
-  background: #06122a;
+  /*background: #06122a;*/
+  background: linear-gradient(#06133c, #07154b 50%, #07154b 25%, #06122a);
   /* background: url("https://i.giphy.com/media/2J0g27YvOsqUE/giphy.webp") 100%; */
   color: white;
   font-family: 'Roboto Mono', monospace;
   text-align: center;
   min-height: 100vh;
-  padding-bottom: 10vh;
+  padding: 50px 0 10vh;
+
 }
 
 #about-me {
@@ -50,7 +50,7 @@
 }
 
 #first-about {
-  margin-top: 30px;
+  /*margin-top: 30px;*/
   text-align: left;
 }
 

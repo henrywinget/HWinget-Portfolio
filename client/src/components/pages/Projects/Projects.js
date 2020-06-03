@@ -3,54 +3,63 @@ import './Projects.css';
 import { Card, CardTitle, CardText, CardImg, CardImgOverlay } from 'reactstrap';
 import Wrapper from '../../Wrapper/Wrapper';
 import Slide from 'react-reveal/Slide';
-import henryDev from './images/henrydevsquare.gif';
+const projects = [
+  {
+    title: 'Clear Intelligence Watson Build',
+    link: 'http://watson.cleari.ai:8080/',
+    description: 'Providing restaurants with valuable analytics to promote business growth, powered by IBM Watson.',
+    tech: 'React.js/ Express/ Node/ MongoDB',
+    image: 'https://i.imgur.com/eukDyTt.png',
+  },
+  {
+    title: '',
+    link: 'https://hark-up.herokuapp.com/',
+    description: 'Text to speech application designed for online news articles.',
+    tech: 'Handlebars/ MySQL /Cheerio',
+    image: 'https://i.imgur.com/4zCYXAh.png',
+  },
+  {
+    title: '',
+    link: 'https://henrywinget.github.io/itisyourbirthday.//',
+    description: 'It\'s a statement of fact; a stylized birthday card in homage to the No. 1 streamed show on Netflix.',
+    tech: 'CSS / HTML5',
+    image: 'https://i.imgur.com/iFgTuOv.png',
+  },
+];
+
+const revealStyle = {
+  display: 'flex',
+  flexDirection: 'row',
+  justifyContent: 'center',
+  alignItems: 'center',
+};
 
 export class Project extends Component {
+  
   render() {
+    const cardTitleStyle = { background: 'rgba(0, 0, 0, 0.25)', padding: 5 };
+    
     return (
       <div id="all-projects">
         <Wrapper>
           <h2 id="project-header">PROJECTS</h2>
           <div className="row projects">
-            <Slide left>
-              <div className="col-lg-4">
-                <a href="https://hark-up.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-                  <Card inverse>
-                    <CardImg width="100%" src="https://i.imgur.com/4zCYXAh.png" target="_blank" rel="noopener noreferrer" alt="HarkUp" />
-                    <CardImgOverlay>
-                      <CardTitle>HarkUp</CardTitle>
-                    </CardImgOverlay>
-                  </Card>
-                </a>
-                <CardText>Text to speech application. Paste your article's URL in the space and let HarkUp read it for you! *Handlebars/ MySQL /Cheerio</CardText>
-              </div>
-            </Slide>
-            <Slide up>
-              <div className="col-lg-4">
-                <a href="http://watson.cleari.ai:8080/" target="_blank" rel="noopener noreferrer">
-                  <Card inverse>
-                    <CardImg width="100%" src="https://i.imgur.com/eukDyTt.png" alt="Clear Intelligence Restaurant" />
-                    <CardImgOverlay>
-                      <CardTitle>Clear Intelligence Food-to-Table Experience</CardTitle>
-                    </CardImgOverlay>
-                  </Card>
-                </a>
-                <CardText>Powered by IBM Watson, a food-to-fork experience designed to promote customer knowledge of the food they are served, as well as provide the restaurant with valuable analytics to promote business growth. *React.js/ Express/ Node/ MongoDB</CardText>
-              </div>
-            </Slide>
-            <Slide right>
-              <div className="col-lg-4">
-                <a href="https://github.com/henrywinget/Star-Wars-Hangman" target="_blank" rel="noopener noreferrer">
-                  <Card inverse>
-                    <CardImg width="100%" src="https://i.imgur.com/kHxuipe.png" alt="Star Wars Hang-Man" />
-                    <CardImgOverlay>
-                      <CardTitle>Star Wars Hangman</CardTitle>
-                    </CardImgOverlay>
-                  </Card>
-                </a>
-                <CardText>Play the age old game of hangman, with a Star Wars twist on your desktop! *HTML /Javascript</CardText>
-              </div>
-            </Slide>
+            {projects.map((project, index) => {
+              return <Slide left={index === 0} up={index === 1} right={index === 2} key={project.title}  style={revealStyle}>
+                <div className="col-lg-4" style={{ width: '100%' }}>
+                  <a href={project.link} target="_blank" rel="noopener noreferrer">
+                    <CardText style={{ textAlign: 'center' }}>{project.tech}</CardText>
+                    <Card inverse>
+                      <CardImg style={{width: '100%'}} src={project.image} target="_blank" rel="noopener noreferrer" alt={project.title} />
+                      <CardImgOverlay>
+                        <CardTitle style={project.title ? cardTitleStyle : null}>{project.title}</CardTitle>
+                      </CardImgOverlay>
+                    </Card>
+                  </a>
+                  <CardText>{project.description}</CardText>
+                </div>
+              </Slide>
+            })}
           </div>
         </Wrapper>
       </div>
