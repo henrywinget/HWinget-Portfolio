@@ -6,7 +6,7 @@ import Slide from 'react-reveal/Slide';
 const projects = [
   {
     title: 'Clear Intelligence Watson Build',
-    link: 'http://watson.cleari.ai:8080/',
+    link: 'https://clear-intelligence-watson-2018.herokuapp.com/',
     description: 'Providing restaurants with valuable analytics to promote business growth, powered by IBM Watson.',
     tech: 'React.js/ Express/ Node/ MongoDB',
     image: 'https://i.imgur.com/eukDyTt.png',
