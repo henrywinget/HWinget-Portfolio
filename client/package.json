@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://www.henrywinget.com/",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "gh-pages": "^1.2.0",
     "jquery-nav-scroll": "^1.4.1",
     "react": "^16.4.1",
